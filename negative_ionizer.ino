@@ -1,66 +1,33 @@
 int led1 = 1; //green
-
 int led2 = 2; //yellow
-
 int led3 = 3; //red
 
 int inPin = 2;
-
 int trigPin = 5;
-
 int echoPin = 6;
-
 int leftMotor_forward = 9;
-
 int leftMotor_backward = 10;
-
 int rightMotor_forward = 11;
-
 int rightMotor_backward = 12;
-
 long duration;
-
-int distance;
-
-
-
-#include <LiquidCrystal.h>
-
-int sensorValue;
-
-const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
-
-LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
-
+int distance, sensorValue;
 
 
 void setup() {
-
 pinMode(led1, OUTPUT);
-
 pinMode(led2, OUTPUT);
-
 pinMode(led3, OUTPUT);
-
 lcd.begin(16, 2);
 
 
 
 pinMode(leftMotor_forward, OUTPUT);
-
 pinMode(leftMotor_backward, OUTPUT);
-
 pinMode(rightMotor_forward,OUTPUT);
-
 pinMode(rightMotor_backward, OUTPUT);
-
 pinMode(trigPin, OUTPUT);
-
 pinMode(echoPin, INPUT);
-
 Serial.begin(9600);
-
-
 
 }
 
