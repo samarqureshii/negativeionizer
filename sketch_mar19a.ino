@@ -34,14 +34,26 @@ void pivotRight(int pivotDuration){
   delay(pivotDuration);
 }
 
-void loop() {
-  backward(1600);
+void Stop(int pivotDuration){
+  digitalWrite(leftMotor_forward,LOW);
+  digitalWrite(leftMotor_backward,LOW);
+  digitalWrite(rightMotor_forward, LOW);
+  digitalWrite(rightMotor_backward, LOW);
+  delay(pivotDuration);
+}
 
-  sensorValue = analogRead(0); // read analog input pin 0
+void loop() {
+  //backward(1600);
+
+  sensorValue = analogRead(0); // reads analog input pin 0
   Serial.print("AirQuality=");
   Serial.print(sensorValue, DEC); // prints the value read
   Serial.println(" PPM\t");
+  delay(3000);
 
+  if(sensorValue>600){
+    Stop(4000);
+  }
 
   digitalWrite(trigPin, LOW);
   delayMicroseconds(1000);
@@ -53,7 +65,10 @@ void loop() {
   Serial.print("\t\t\t\t\t\t\t\tDistance:");
   Serial.println(distance);
 
-  if (distance <= 10 ){
+ /*
+  *  if (distance <= 10 ){ //obstacle detection
     pivotRight(7000);
   }
+  */
+  
 }
