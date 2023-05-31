@@ -1,4 +1,5 @@
-# negativeionizer 🤖
+# [negativeionizer](https://www.samarq.org/8bbb080e39674f6da8a58c014960e8a1) 🤖
+> This project won second place at [YRSTF 2021](https://yrstf.info.yorku.ca), as well as the Evgeny Rosen Best Home Innovation Award.
 
 #### Over a billion people, like myself, have to live with respiratory ailments aggrivated by poor air quality. 
 
@@ -7,4 +8,4 @@ I set out to solve this problem by building a 3 wheeled motorized, fully autonom
 
 This cost-effective, low-power device brought air quality from harmful levels to safe breathing in a shorter timeframe than if the ionizer was stationary. This robot has potential for industrial and healthcare spaces that require constant air quality monitoring and sanitization.
 
-[Click here for a full summary of this project.](https://projectboard.world/project/neutralizing-airborne-viruses-using-an-autonomous-mobilized-negative-ionizer-to-improve-air-quality)
+
